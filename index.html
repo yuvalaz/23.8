@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <script>
+        // //task 1
+        // function printAllTheLetters(str){
+        //     for(var i=0; i< str.length; i++){
+        //         console.log(str[i]);
+        //     }
+        // }
+        
+        
+        //task 2
+        // function getStringAndReturnWithIndex(str){
+        //     var newString = " " ;
+        //     for(var i=0; i < str.length ; i++){
+        //         newString = newString + str[i] + i
+        //     }
+        //     return newString
+        // }
+        
+        
+        
+        // //task 3
+        // function replaceLetterWith2(str){
+        //     var newString = "";
+        //     for(var i =0;i<str.length;i++){
+        //         if(i%2==0){
+        //             newString = newString + "2";
+        //         }
+        //         else{
+        //             newString = newString + str[i]
+        //         }
+        //     }
+        //     return newString
+        // }
+
+        // //task 4
+        // function ifNameStartWithA(fName){
+        //     if(fName[0] == "A"){
+        //         console.log("hello");
+        //         return
+        //     }
+        //     console.log("bye");
+        // }
+
+        // //task 5
+        // function ifNameEndWithE(lName){
+        //     if(lName[lName.length - 1] == "E"){
+        //         return "yes"
+                
+        //     }
+        //     return "no"
+        // }
+
+        // //task 6
+        // function changeStrToUpperCase(str){
+        //     return str.toUpperCase();
+            
+
+        // }
+
+        // // task 7
+        // function getStrToArray(str){
+        //     var strArray = [];
+        //     var startComma = 0;
+        //     var comma = 1;
+        //     while(comma > 0){
+                
+        //         comma = str.indexOf(",");
+        //         var number = str.substring(startComma,comma);
+        //         strArray.push(number);
+        //         str = str.substr(comma + 1);
+        //         console.log(number);
+          
+        //     }
+        //     strArray.push(str);
+        //     console.log(strArray);
+        // }
+     
+        // //task 8
+        // function randomNumber(){
+        //     Math.floor(Math.random()*10)
+        // }
+
+        // //task 9
+        // function randomNumberTillTheNumber(){
+        //     var numberFromUser = +prompt("what is the number");
+        //     return Math.floor(Math.random()*(numberFromUser + 1));  
+        // }
+
+        // //task 10
+        // function bingoFromOneToTen(){
+        //     var gues = +prompt("what is your gues?");
+        //     var bet = Math.floor(Math.random()*10);
+        //     if(gues == bet){
+        //         console.log("good job");
+        //         return
+        //     }
+        //     console.log("oh no! never mide, next time will be bettar");
+
+        // }
+
+        // //task 11
+        // function creatArrayWithRandom(){
+        //     var arrayCreated =[];
+        //     for(var i=0;i<10;i++){
+        //         arrayCreated[i] = Math.floor(Math.random()*101)
+        //     }
+        //     console.log(arrayCreated);
+        // }
+
+        // //task 12
+        // function getNumberFromUserAndFromRandom(){
+        //     var userNumber = +prompt("what is your number between 1-10?");
+        //     var bet = Math.floor(Math.random()*11);
+        //     if(userNumber>bet){
+        //         return userNumber
+        //     }
+        //     else if(userNumber==bet){
+        //         return "equal"
+        //     }
+        //     return bet
+        // }
+
+        // //task 13
+        // function getFiveNumbersPrintLow(){
+        //     var min = Number.MAX_SAFE_INTEGER;
+        //     for(var i=0; i<5;i++){
+        //         var numberFromUser = +prompt("what is your five number?");
+        //         if(numberFromUser<min){
+        //             min = numberFromUser
+        //         }
+        //     }
+        //     console.log(min);
+        // }
+
+        // //task 14
+        // function ifNumberFromUserIsOdd(){
+        //     var numberFromUser = +prompt("what is your number");
+        //     var bet = Math.floor(Math.random()*101);
+        //     if(numberFromUser%2==0){
+        //         return Math.min(bet, numberFromUser);
+        //     }
+        //     return Math.max(bet, numberFromUser);
+        // }
+
+        // //task 15
+        // function creatRandomArray(){
+        //     var randomArray = [];
+        //     for(var i =0; i< Math.floor(Math.random()*365); i++){
+        //         randomArray[i] = Math.floor(Math.random()*874)
+        //     }
+        //     return randomArray
+        // }
+
+        // //task 16
+        // function printRandomNumberFromArray(array){
+        //     console.log(array[Math.floor(Math.random()*array.length)]);
+        // }
+
+        // //task 17
+        // function changeRandomLetterToUpperCasr(){
+        //     var nameFromUser = prompt("what is your name");
+        //     var randomNumber = Math.floor(Math.random()*(nameFromUser.length+1));
+        //     var oneLetter = nameFromUser.substr(randomNumber,1)
+        //     var newText = nameFromUser.substring(0,randomNumber) + oneLetter.toUpperCase() + nameFromUser.substring(randomNumber + 1);
+        //     console.log(newText);
+        // }
+    
+ 
+
+        // //task 18
+        // function twoNamesAndTwoAges(){
+        //     var firstName = prompt("what is your first name?");
+        //     var secondName = prompt("what is your first name?");
+        //     var firstAge = +prompt("what is your first age?");
+        //     var secondAge = +prompt("what is your second age?");
+        //     if(firstName[0] == secondAge[0]){
+        //         console.log(Math.floor(Math.random()*21));
+        //     }
+        //     else if(firstName[firstName.length - 1] == secondName[secondName.length - 1]){
+        //         console.log("the common ending letter is: " + firstName[firstName.length - 1]);
+        //     }
+        //     else{
+        //         console.log("the first age is: " + firstAge + " the second age is: " + secondAge);
+        //     }
+
+        // }
+        // function twoNamesAndTwoAges(){
+        //     var NamesAndAges = [];
+        //     for(var i=0; i<4; i++){
+        //         if (i<2) {
+        //             NamesAndAges[i]= prompt("what is your name?");
+        //         }
+        //         else{
+        //             NamesAndAges[i]= prompt("what is your age?");                                   
+        //         }
+        //     }
+        //     if(NamesAndAges[0][0] == NamesAndAges[1][0]){
+        //         console.log(Math.floor(Math.random()*21));
+        //     }
+        //     else if(NamesAndAges[3][NamesAndAges[3].length - 1] == NamesAndAges[2][NamesAndAges[2].length - 1]){
+        //         console.log("the common ending letter is: " + NamesAndAges[3][NamesAndAges[3].length - 1]);
+        //     }
+        //     else{
+        //         console.log("the first age is: " + NamesAndAges[2] + " the second age is: " + NamesAndAges[3]);
+        //     }
+        // }
+        
+        // //task 19
+        // function getNumberFromUserAndRandom(){
+        //     var text = prompt("what is your text");
+        //     var randomNumber = Math.floor(Math.random()*6);
+        //     console.log(randomNumber);
+        //     var result = text.substring(0, randomNumber);
+        //     console.log(result);
+
+        // }
+
+        // //task 20
+        // function ifNumberDividedThree(){
+        //     var numberFromUser = +prompt("what is your number?");
+        //     var randomNumber = Math.floor(Math.random()*numberFromUser+1);
+        //         if(numberFromUser%3==0){
+        //             for(var i =0;i<randomNumber;i++){
+        //                 console.log(randomNumber);
+                        
+        //         }
+        //     }
+        //         else{
+        //             console.log(randomNumber*Math.PI);
+        //         }
+                        
+        // }
+        
+        
+        // //task 21
+        // function dateAndHouer(){
+        //     var myDate = new Date();
+        //     console.log(myDate);
+        // }
+        
+        // //task 22
+        // function getDateAndPrint(requestedDate){
+        //     var myDate = new Date(requestedDate);
+        //     console.log(myDate);
+        // }
+
+        // //task 23
+        // function findDate(){
+        //     var dateFromUser = prompt("what is the date base standard format");
+        //     var myDate = new Date(dateFromUser);
+        //     console.log(myDate);
+        // }
+        
+        // //task 24
+        // function getDateAndPrintMounth(){
+        //     var dateFromUser = prompt("what is the date?");
+        //     var myDate = new Date(dateFromUser);
+        //     console.log(myDate.getMonth()+1);
+        // }
+        
+        // //task 25
+        // function getDateAndPrintHour(){
+        //     var dateFromUser = prompt("what is the date?");
+        //     var myDate = new Date(dateFromUser);
+        //     console.log(myDate.getHours());
+        // }
+
+        // //task 26
+        // function getDateAndPrintYear(){
+        //     var dateFromUser = prompt("what is the date?");
+        //     var myDate = new Date(dateFromUser);
+        //     console.log(myDate.getFullYear());
+        // }
+
+        // //task 27
+        // function getDateAndPrintMinutes(){
+        //     var dateFromUser = prompt("what is the date?");
+        //     var myDate = new Date(dateFromUser);
+        //     console.log(myDate.getMinutes());
+        // }
+
+        // //task 28
+        // function getTwoDateAndChooseEarly(){
+        //     var day1 = new Date(prompt("what is the date base on the format?"));
+        //     var day2 = new Date(prompt("what is the date base on the format?"));
+        //     if(day1 < day2){
+        //         console.log(day2);
+        //         return
+        //     }
+        //         console.log(day1);
+        // }
+        // //task 29
+        // function whatIsTheAge(){
+        //     var dayOfBirth = new Date(prompt("what is your day of birth?"));
+        //     var today = new Date();
+        //     var years =  today.getFullYear() - dayOfBirth.getFullYear() ;
+        //     var mounths =  today.getMonth() - dayOfBirth.getMonth() ;
+        //     var days = today.getDate() - dayOfBirth.getDate() ;
+        //     if(mounths < 0 || mounths == 0 && days < 0){
+        //        // console.log(years - 1);
+        //         return years -1
+        //     }
+        //     else if(mounths == 0 && days == 0){
+        //         console.log("congratulation! its your birthday");
+        //     }
+        //     console.log(years);
+        //     return years
+        // }
+
+
+
+        // //task 30
+        // function plusEighteen(){
+        //     var age = whatIsTheAge();
+        //     if(age >=18){
+        //         alert("you can use are web")
+        //         return
+        //     }
+        //     alert("you are not allowed to enter")
+
+        // }
+        
+        // //task 31
+
+
+        // //task 32 
+        // function randomDate(){
+        //     var random = new Date(Math.floor(Math.random()*13) + "/" + Math.floor(Math.random()*32) +"/" + Math.floor(Math.random()*32 +1990))
+        //     console.log(random);
+        // }
+
+        // randomDate()
+
+        // //task 33
+        // function whoIsLong(str){
+        //     var start;
+        //     var end = 1;
+        //     var result = "";
+        //     while(end>0){
+        //         start = str.indexOf(":") ;
+        //         end = str.indexOf(",");
+        //         var value = str.substring(start + 1,end);
+        //         str = str.substr(end +1);
+        //         if(value.length > result.length){
+        //             result = value
+        //         }
+        //     }
+        //     var endValue = str.substr(start+1);
+        //     if(endValue.length > result.length){
+        //         console.log(endValue.length);
+        //         return endValue.length
+        //     }
+        //     console.log(result.length);
+        //     return result.length
+        // }
+
+        // // var srtingForFunction = "color:red,color:black,color:white,color:pink,color:green,color:yellow,color:";
+        // // whoIsLong(srtingForFunction)
+
+        // //task 35
+        // function getValue(str){
+        //     var start = str.indexOf(":");
+        //     var end = str.indexOf(",");;
+        //     while(end>0){
+        //         start = str.indexOf(":") ;
+        //         end = str.indexOf(",");
+        //         if(end<0){
+        //             break 
+        //         }
+        //         var value = str.substring(start + 1,end);
+        //         console.log(value);
+        //         str = str.substr(end +1);
+
+        //     }
+        //     var endValue = str.substr(start+1);
+        //     console.log(endValue);   
+        // }
+
+        // //task 36
+        // function getTheKey(str){
+        //     var start = str.indexOf(",");
+        //     var end = str.indexOf(":");
+        //     var firstKey = str.substring(0,end);
+        //     console.log(firstKey);
+        //     while(end>0){
+        //         str = str.substr(end +1)
+        //         start = str.indexOf(",");
+        //         end = str.indexOf(":");
+        //         var result = str.substring(start + 1, end);
+        //         console.log(result);
+        //     }
+
+        // }
+
+        // //task 37
+        // function getTheLengtValue(str){
+        //     var start = str.indexOf(":");
+        //     var end = str.indexOf(",");;
+        //     while(end>0){
+        //         start = str.indexOf(":") ;
+        //         end = str.indexOf(",");
+        //         if(end<0){
+        //             break 
+        //         }
+        //         var value = str.substring(start + 1,end);
+        //         return value.length;
+        //         str = str.substr(end +1);
+
+        //     }
+        //     var endValue = str.substr(start+1);
+        //     return endValue.length; 
+        //     }
+
+        //     //task 38
+        //     function ifStrLongThenFive(str){
+        //         if(str.length > 5){
+        //             return "long";
+        //         }
+        //         return "short";
+        //     }
+
+        //     //task 39
+        //     function ifaIsFound(str){
+        //         if(str.indexOf("a")>0){
+        //             return str.indexOf("a"); 
+        //         }
+        //         return "not found";
+        //     }
+
+        //     //task 40
+        //     function ifrIsFound(str){
+        //         if(str.indexOf("r")>0){
+        //             return true
+        //         }
+        //         return false
+        //     }
+
+        //     //task 41
+        //     function ifLetterExist(letter, str){
+        //         if(str.indexOf(letter)){
+        //             return true
+        //         }
+        //         return false
+        //     }
+
+        //     //task 42
+        //     function lastIndexOfLetter(letter, str){
+        //         if(str.lastIndexOf(letter)>0){
+        //             console.log(str.lastIndexOf(letter));
+        //         }
+        //         else{
+        //             console.log("there no " + letter + " in the string " + string);
+        //         }
+        //     }
+
+        //     //task 43 +44
+        //     function threeFirstLetters(){
+        //         var str = "sayonara";
+        //         return str.substr(0,3);
+        //     }
+
+        //     //task 45
+        //     function fourLetters(){
+        //         var str = "sayonara"
+        //         var yLetter = str.indexOf("y")
+        //         return str.substr(yLetter,4)
+        //     }
+
+        //     //task 46
+        //     function fromOtoEnd(){
+        //         var str ="sayonara";
+        //         var oLetter = str.indexOf("o");
+        //         return str.substr(oLetter);
+        //     }
+
+        //     //task 47 + 48 + 49
+        //     function stringAndIndex(index,str){
+        //         if(index>str.length){
+        //             return "index is too big"
+        //         }
+        //         return str.substr(index)
+        //     }
+
+        //     //task 50
+        //     function stringAndIndex(index,str){
+        //         if(index>str.length){
+        //             return "index is too big"
+        //         }
+        //         return str.substr(index,3)
+        //     }
+            
+        //     //task 51
+        //     function twoNumberAndString(number1,number2,str){
+        //         if(number1 < str.length && number2 < str.length){
+        //             return str.substring(number1, number2);
+        //         }
+        //     }
+
+        //     //task 56
+        //     function howManyLetter(name){
+        //         if(name.indexOf(" ")<0){
+        //             return name.length
+        //         }
+        //         var space = name.indexOf(" ");
+        //         var firstName = name.substring(0,space);
+        //         var lastName = name.substr(space+1);
+        //         console.log("index first name is: " + firstName.length + " index last name is: " + lastName.length);
+        //     }
+
+        //     //task 57
+        //     function ifTwoStrSameLow(str1,str2){
+        //         str1 = str1.toLowerCase();
+        //         str2 = str2.toLowerCase();
+        //         if(str1 == str2){
+        //             return "the same"
+        //         }
+        //         return "are not the same"
+        //     }
+            
+        //     //task 58
+        //     function ifTwoStrSameUpper(str1,str2){
+        //         str1 = str1.toUpperCase();
+        //         str2 = str2.toUpperCase();
+        //         if(str1==str2){
+        //             return "the same"
+        //         }
+        //         return "are not same"
+        //     }
+
+        //     //task 59
+        //     function whoIsLonger(){
+        //         firstName = prompt("what is your first name?");
+        //         lastName = prompt("what is your last name?");
+        //         if(firstName.length > lastName.length){
+        //             return console.log(firstName);
+        //         }
+        //         else if(lastName > firstName){
+        //             return console.log(lastName);
+        //         }
+        //         else{
+        //             return "equal"
+        //         }
+        //     }
+
+        //     //task 60
+        //     function getFullNameFromUser(){
+        //         fName = prompt("what is your first name?");
+        //         lName = prompt("what is your last name?");
+        //     }
+
+        //     //task 61
+        //     function ifTheNameContaine(){
+        //         getFullNameFromUser()
+        //             if(fName.indexOf("a") > 0 && lName.indexOf("api") > 0){
+        //                 return console.log("exist");
+        //             }
+        //             console.log("not exist");                
+        //     }
+
+        //     //task 62
+        //     function ifLongOrShortThenFive(str){
+        //         if(str.length > 5){
+        //             return "long"
+        //         }
+        //         else if(str.length == 5){
+        //             return "equal"
+        //         }
+        //         return "short"
+        //     }
+
+        //     //task 63
+        //     function ifCountryNameIsShortOrLong(country){
+        //         if(country.length < 3){
+        //             return "yes"
+        //         }
+        //         return "no"
+        //     }
+
+        //     //task 64
+        //     function whenTheLetter(letter,str){
+        //         if(str.indexOf(letter)>0){
+        //             return str.indexOf(letter);
+        //         }
+        //             return letter
+        //     }
+
+        //     //task 65
+        //     function getFirstNameAndLastName(){
+        //         var fName = prompt("what is your first name?");
+        //         var lName = prompt("what is your last name?");
+        //     }
+
+        //     //task 66
+        //     function nameFormat(){
+        //         getFirstNameAndLastName()
+        //         var nameFormat = fName[0] + "." + lName.substr(0,3);
+        //         console.log(nameFormat);
+        //     }
+
+            // //task 67
+            // function twoLastName(){
+            //     var firstLName = prompt("what is the first last name?");
+            //     var secondLName = prompt("what is the second last name?");
+            //     if(firstLName.length > secondLName){
+            //         console.log(secondLName.toLowerCase);
+            //         return firstLName
+            //     }
+            //     else if(firstLName.length < secondLName){
+            //         console.log(firstLName.toLowerCase);
+            //         return secondLName
+            //     }
+            //     else{
+            //         return "same index"
+            //     }
+            // }
+
+            // //task 68
+            // function ifNameIsExist(letter,name){
+            //     if(name.indexOf(letter)>0){
+            //         return name
+            //     }
+            //     else{
+            //         return "the " + letter + " are not exist in " + name
+            //     }
+            // }
+
+            // //task 69
+            // function upperCaseToTheFirstLetter(name){
+            //     var space = name.indexOf(" ");
+            //     var allName = [ , , ];
+            //     var start = 0;
+            //     var boolean = false;
+            //     if(space>0){
+            //         boolean = true
+            //         for(var i=0; i<allName.length+1; i++){
+            //             space = name.indexOf(" ");
+            //             if(space<0){
+            //                 break
+            //             }
+            //             var word = name[0].toUpperCase() + name.substring(1,space).toLowerCase();
+            //             allName[i] = word
+            //             name = name.substr(space + 1)
+            //         }
+
+            //         console.log(allName);
+            //     }
+            //     firstName = name[0].toUpperCase() + name.substr(1).toLowerCase();
+            //         if(boolean == true){
+            //             allName.push(firstName);
+            //         }
+            //         else{
+            //             return firstName;
+            //         }
+            // }
+
+        // //task 70
+        // var user ={
+        //     firstName: "yuval",
+        //     lastName: "azulay",
+        //     age: 25 ,
+        //     email: "yuvalazulai2016@gmail.com" ,
+        //     id: 1,
+        // }
+        // console.log(user);
+        // console.log(user.firstName);
+
+
+        // //task 71
+        // var dog ={
+        //     name: "papi",
+        //     age: 3,
+        //     sex: "male",
+        //     kind: "dalmatian",
+        //     id: 2,
+        // }
+        // console.log(dog);
+
+        // //task 72
+        // var car ={
+        //     color: "white",
+        //     wheels: 4,
+        //     company: "mercedes",
+        //     id: 3,
+        // }
+        // // console.log(car);
+        //  var objectArray = [user, dog, car];
+        // // console.log(objectArray);
+
+        // // //task 84
+        // console.log(objectArray[1].id);
+
+        // // task 85
+        // function printIdOfArray(){
+        //     for(var i=0; i<objectArray.length; i++){
+        //         console.log(objectArray[i].id); 
+        //     }
+        // }
+        
+        
+        // //task 86
+        // function askDtForUser(){
+        //     var secondUser ={
+        //         firstName: prompt("what is your first name?"),
+        //             lastName: prompt("what is your last name?"),
+        //             age: +prompt("what is your age?"),
+        //             email: prompt("what is your email?"),
+        //             id: +prompt("what is your id"),     
+        // }
+        // return secondUser
+        
+        // }
+
+
+        // // console.log(secondUser);
+
+        // //task 87
+        // function bulitArrayOfDog(){
+        //     var dogs = []
+        //     for(var i =-1; i<dogs.length; i++){
+        //         var dog ={
+        //             name: prompt("what is the name"),
+        //             age: prompt("what is your age"),
+        //             kind: prompt("what is the kind?"),
+        //             id: i + 2
+        //         }
+        //         dogs.push(dog)
+        //     }
+        //     return dogs
+        // }
+
+        // //task 88
+        // function bulitArrayOfCar(){
+        //     var amountOfCar = +prompt("how many car?");
+        //     var carsArray = [];
+        //     for(var i=0; i<amountOfCar; i++){
+        //         var car ={
+        //             company: prompt("what is the company?"),
+        //             model: prompt("what is the model"),
+        //             color: prompt("what is the color"),
+        //             year: +prompt("what is the year?"),
+        //             id: i+1
+        //         }
+        //         carsArray.push(car);
+        //     }
+        // }
+
+        // //task 89
+        // function bulitArrayFromUser(){
+        //     var userObject = {    
+        //     }
+        //     userObject[prompt("what is field?")] = prompt("what is the value?");
+        //     userObject[prompt("what is field?")] = prompt("what is the value?");
+        //     userObject[prompt("what is field?")] = prompt("what is the value?");
+        // }
+
+        // //task 90
+        // function bulitArrayKit(){
+        //     var array = [];
+        //     var numberOfIndex = +prompt("how many index?");
+        //     var fieldNumber = +prompt("how many field?");
+        //     for(var i=0; i<numberOfIndex; i++){
+        //         var userObject ={
+        //          id: i+1   
+        //         }  
+        //         for(var j=0; j<fieldNumber;j++){
+        //             userObject[prompt("what is the field you want")] = prompt("what is the value?");      
+        //         }
+        //         array.push(userObject)                
+        //     }
+        //     console.log(array);
+
+        // }
+        // bulitArrayKit()
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+        // //task 73
+        // console.log(user.name);
+        // console.log(user["name"]);
+
+        // //task 74
+        // console.log(dog.age);
+        // console.log(dog["age"]);
+
+        // //task 75
+        // console.log(car.color, car.company);
+
+        // //task 76
+        // function changeLastName(){
+        //     user.lastName = prompt("what is your new last name?");
+        // }
+
+        // //task 77
+        // function newKind(){
+        //     dog.kind = prompt("what is the new kind?");
+        // }
+
+        // //task 78
+        // function newwheels(){
+        //     car.wheels = prompt("what is the new wheels number?");
+        // }
+
+        // //task 79
+        // function newValueInUser(){
+        //     user[prompt("new value")] = prompt("what is the new?")
+        // }
+
+        // //task 80
+        // function newValueInDog(){
+        //     dog[prompt("new value")] = prompt("what is the value?")
+        // }
+
+        // //task 81
+        // function newValueInCar(){
+        //     car[prompt("what is the new value")] = prompt("what is the new value?")
+        // }
+
+        // //task 82 v
+
+        // //task 83
+        // var objectArray = [user, dog, car];
+        // console.log(objectArray);
+
+        // //task 84
+        // console.log(objectArray[i].id);
+  
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
